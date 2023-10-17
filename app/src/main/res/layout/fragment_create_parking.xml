@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:context=".CreateParkingFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="717dp"
+        android:background="@drawable/custom_bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="20dp"
+        android:text="Create Parking Space"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingStart="20dp"
+        android:text="Add Parking Location"
+        android:textStyle="bold"
+        android:textColor="#595656"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingStart="20dp"
+        android:text="Upload Picture"
+        android:textStyle="bold"
+        android:textColor="#595656"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="112dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="134dp"
+        android:layout_height="112dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="74dp"
+        android:background="@drawable/add_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingStart="20dp"
+        android:text="Number of Parking Space"
+        android:textStyle="bold"
+        android:textColor="#595656"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="15dp"
+        android:text="Zip Code"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <View
+        android:layout_width="396dp"
+        android:layout_height="205dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="496dp" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="389dp"
+        android:layout_height="47dp"
+        android:background="@drawable/bars"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="15dp"
+        android:text="Street"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="15dp"
+        android:text="City"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:paddingStart="15dp"
+        android:text="Hour"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:paddingStart="15dp"
+        android:text="Price"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="15dp"
+        android:text="Country"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="496dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:text="Upload"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="714dp"
+        tools:ignore="MissingConstraints"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="784dp"
+        tools:ignore="BottomAppBar,MissingConstraints"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="784dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parking_icon"
+        app:flow_horizontalBias="0.498"
+        app:flow_verticalBias="0.933"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="755dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:context=".LocationFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@drawable/custom_bar"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="84dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="46dp"
+        android:drawableRight="@drawable/down_cursor_icon"
+        android:text="  Location"
+        android:textSize="30sp"
+        android:layout_marginStart="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="118dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="46dp"
+        android:text="  Parkings Near You"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:text="-Location-"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:text="-Location-"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:text="-Location-"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:text="-Location-"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="585dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="271dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:background="@drawable/recent_booking"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="784dp"
+        tools:ignore="BottomAppBar,MissingConstraints"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="784dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parking_icon"
+        app:flow_horizontalBias="0.498"
+        app:flow_verticalBias="0.933"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="755dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:ignore="MissingClass"
+    tools:context=".HomeFragment">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:background="@drawable/custom_bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <ImageButton
+        android:layout_width="99dp"
+        android:layout_height="78dp"
+        android:background="@drawable/circle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <ImageButton
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:background="@drawable/person_icon2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Arbeck Biason"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="108dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="@arbeck_was_here"
+        android:textColor="#838383"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="139dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="Privacy Policy"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="Support"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="Invite Friends"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="Favorites"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="Notifications"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bars"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:text="My Vehicle"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="368dp"
+        android:layout_height="55dp"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="682dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="784dp"
+        tools:ignore="BottomAppBar,MissingConstraints"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="784dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parking_icon"
+        app:flow_horizontalBias="0.498"
+        app:flow_verticalBias="0.933"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="755dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
