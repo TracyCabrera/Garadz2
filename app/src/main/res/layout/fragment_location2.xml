@@ -29,8 +29,9 @@
     <TextView
         android:layout_width="390dp"
         android:layout_height="46dp"
-        android:text="  Parkings Near You"
+        android:text="Parkings Near You"
         android:textSize="30sp"
+        android:paddingStart="10dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="198dp" />

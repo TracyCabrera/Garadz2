@@ -5,18 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_4"
-    tools:context=".HistoryFragment">
+    tools:context=".BookingFragment">
 
     <ImageView
-        android:layout_width="410dp"
-        android:layout_height="309dp"
+        android:layout_width="418dp"
+        android:layout_height="429dp"
         android:background="@drawable/img_5"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="-48dp" />
 
     <Button
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        android:background="@drawable/back_icon"w/>
+        android:id="@+id/back"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:text="."/>
 
     <View
         android:layout_width="410dp"
@@ -25,6 +32,352 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="Lawnfield Parks"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/favorite_icon"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="261dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Westheimer rd.santa ana,illinois"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="5.0 rating"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/star_icon"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="321dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/star_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/star_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/star_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/star_icon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="5dp"
+        android:text="Parking Rate"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+
+    <TextView
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="30 minutes"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:layout_width="121dp"
+        android:layout_height="20dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 20"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="430dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="121dp"
+        android:layout_height="20dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 45"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="121dp"
+        android:layout_height="20dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 90"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="121dp"
+        android:layout_height="20dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 135"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 140"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:text="P 140"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="30dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="1 hour"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="30dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="2 hours"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="30dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="4 hours"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="30dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="5 hours"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:background="@drawable/outline"
+        android:paddingStart="30dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="0dp"
+        android:text="3 hours"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="0dp"
+        android:text="Select Vehicle Type"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="43dp"
+        android:background="@drawable/img_6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="122dp"
+        android:layout_height="67dp"
+        android:background="@drawable/outline"
+        android:paddingStart="15dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="0dp"
+        android:text="4 Wheel Drive"
+        android:textColor="#555555"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="38dp"
+        android:background="@drawable/img_7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="626dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="122dp"
+        android:layout_height="67dp"
+        android:background="@drawable/outline"
+        android:paddingStart="15dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="0dp"
+        android:text="2 Wheel Drive"
+        android:textColor="#555555"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="BOOK NOW"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="780dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="Reminder: If you exceed a 30-minute delay in returning and picking up, a penalty of 200 pesos will be imposed."
+        android:textColor="#971111"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="706dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
