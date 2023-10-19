@@ -8,7 +8,7 @@
     tools:ignore="MissingClass"
     tools:context=".HomeFragment">
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="400dp"
         android:layout_height="55dp"
