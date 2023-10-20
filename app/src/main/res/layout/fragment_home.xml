@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,7 @@
     android:background="@drawable/img_3"
     tools:ignore="MissingClass"
     tools:context=".HomeFragment">
+
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
