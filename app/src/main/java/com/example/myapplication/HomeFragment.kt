@@ -26,10 +26,6 @@ class HomeFragment : Fragment() {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-
-
-
-
         return inflater.inflate(R.layout.fragment_container, container, false)
     }
 
@@ -54,9 +50,6 @@ class HomeFragment : Fragment() {
                 R.id.profile -> {
                     replaceFragment(profileFragment)
                 }
-                R.id.profile -> {
-                    replaceFragment(profileFragment)
-                }
             }
             true
 
@@ -73,4 +66,4 @@ class HomeFragment : Fragment() {
 
 
 
-    }
+}

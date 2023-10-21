@@ -5,55 +5,61 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.myapplication.databinding.FragmentHomeBinding
+import com.example.myapplication.databinding.FragmentLocationBinding
+import com.example.myapplication.databinding.FragmentProfileBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [LocationFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LocationFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var binding: FragmentLocationBinding
+    private var homeFragment = HomeFragment()
+    private var locationFragment = LocationFragment()
+    private var bookingFragment = BookingFragment()
+    private var historyFragment = HistoryFragment()
+    private var profileFragment = ProfileFragment()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_location2, container, false)
+
+        binding = FragmentLocationBinding.inflate(inflater, container, false)
+
+        return inflater.inflate(R.layout.fragment_container, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment LocationFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LocationFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when(item.itemId){
+                R.id.home -> {
+                    replaceFragment(homeFragment)
+                }
+                R.id.location -> {
+                    replaceFragment(locationFragment)
+                }
+                R.id.fab -> {
+                    replaceFragment(bookingFragment)
+                }
+                R.id.history -> {
+                    replaceFragment(historyFragment)
+                }
+                R.id.profile -> {
+                    replaceFragment(profileFragment)
                 }
             }
+            true
+
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction = childFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragmentContainer, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }
