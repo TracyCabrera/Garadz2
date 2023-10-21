@@ -18,9 +18,9 @@ class LoginFragment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.fragment_login)
 
-        loginButton = findViewById(R.id.Button)
+        loginButton = findViewById(R.id.loginButton)
         username = findViewById(R.id.username)
         password = findViewById(R.id.password)
         dbHelper = DBHelper(this)

@@ -19,9 +19,9 @@ class RegistrationFragment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.fragment_registration)
 
-        email = findViewById(R.id.enterEmail)
+        email = findViewById(R.id.registerButton)
         newPassword = findViewById(R.id.newPassword)
         confirmPassword = findViewById(R.id.confirmPassword)
         registerButton = findViewById(R.id.registerButton)
