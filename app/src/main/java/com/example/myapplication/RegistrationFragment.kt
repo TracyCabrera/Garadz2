@@ -29,8 +29,8 @@ class RegistrationFragment : AppCompatActivity() {
             val textView14 = findViewById<TextView>(R.id.textView14)
             textView14.setOnClickListener {
 
-                val intent1 = Intent(this, LoginFragment::class.java)
-                startActivity(intent1)
+                val intent = Intent(this, LoginFragment::class.java)
+                startActivity(intent)
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
                         confirmPassword

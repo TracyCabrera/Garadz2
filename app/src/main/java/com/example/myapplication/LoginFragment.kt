@@ -30,12 +30,6 @@ class LoginFragment : AppCompatActivity() {
         password = findViewById(R.id.password)
         dbHelper = DBHelper(this)
 
-        val textView2 = findViewById<TextView>(R.id.textView2)
-        textView2.setOnClickListener {
-
-            val intent1 = Intent(this, RegistrationFragment::class.java)
-            startActivity(intent1)
-        }
 
         loginButton.setOnClickListener{
 
