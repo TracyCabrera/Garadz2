@@ -31,6 +31,7 @@ class RegistrationFragment : AppCompatActivity() {
 
                 val intent2 = Intent(this, LoginFragment::class.java)
                 startActivity(intent2)
+            }
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
                         confirmPassword
@@ -57,4 +58,3 @@ class RegistrationFragment : AppCompatActivity() {
             }
         }
     }
-}
