@@ -49,6 +49,7 @@ class LoginFragment : AppCompatActivity() {
                 val checkuser = dbHelper.checkuserpass(usernamedtx, passdtx)
                 if (checkuser==true){
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+
                     val intent = Intent(applicationContext, HomeFragment::class.java)
                     startActivity(intent)
                 }

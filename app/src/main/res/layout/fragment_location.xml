@@ -8,33 +8,42 @@
     tools:context=".LocationFragment">
 
     <View
+        android:id="@+id/view15"
         android:layout_width="match_parent"
         android:layout_height="700dp"
         android:background="@drawable/custom_bar"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="84dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="84dp" />
 
     <TextView
         android:layout_width="390dp"
         android:layout_height="46dp"
+        android:layout_marginTop="108dp"
         android:drawableRight="@drawable/down_cursor_icon"
         android:text="  Location"
         android:textSize="30sp"
-        android:layout_marginStart="20dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="118dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="390dp"
         android:layout_height="46dp"
+        android:paddingStart="10dp"
         android:text="Parkings Near You"
         android:textSize="30sp"
-        android:paddingStart="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
