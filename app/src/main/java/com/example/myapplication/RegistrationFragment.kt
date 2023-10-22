@@ -14,7 +14,7 @@ class RegistrationFragment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_registration)
 
-        val username = findViewById(R.id.usernametextview) as EditText
+        val username = findViewById(R.id.usernameEditText) as EditText
         val newPassword = findViewById(R.id.newPassword) as EditText
         val confirmPassword = findViewById(R.id.confirmPassword) as EditText
         val registerButton = findViewById(R.id.registerButton) as Button
@@ -31,6 +31,7 @@ class RegistrationFragment : AppCompatActivity() {
 
                 val intent2 = Intent(this, LoginFragment::class.java)
                 startActivity(intent2)
+            }
 
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
                         confirmPassword
@@ -45,7 +46,7 @@ class RegistrationFragment : AppCompatActivity() {
                     if (newPassword.equals(confirmPassword)) {
                         if (savedata == true) {
                             Toast.makeText(this, "SignUp Successful", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(applicationContext, registerButton::class.java)
+                            val intent = Intent(this, LoginFragment::class.java)
                             startActivity(intent)
                         } else {
                             Toast.makeText(this, "User Exists", Toast.LENGTH_SHORT).show()
@@ -57,4 +58,3 @@ class RegistrationFragment : AppCompatActivity() {
             }
         }
     }
-}

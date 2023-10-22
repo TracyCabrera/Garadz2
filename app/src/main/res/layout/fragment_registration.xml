@@ -63,6 +63,7 @@
 
     <TextView
         android:id="@+id/textView14"
+        android:clickable="true"
         android:layout_width="354dp"
         android:layout_height="53dp"
         android:backgroundTint="#EDECEC"
@@ -118,7 +119,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/usernametextview"
+        android:id="@+id/usernameEditText"
         android:layout_width="354dp"
         android:layout_height="53dp"
         android:background="@drawable/custom_edittext"

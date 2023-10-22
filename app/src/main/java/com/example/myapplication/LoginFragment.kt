@@ -30,6 +30,12 @@ class LoginFragment : AppCompatActivity() {
         password = findViewById(R.id.password)
         dbHelper = DBHelper(this)
 
+        val textView2 = findViewById<TextView>(R.id.textView2)
+        textView2.setOnClickListener {
+
+            val intent1 = Intent(this, RegistrationFragment::class.java)
+            startActivity(intent1)
+        }
 
         loginButton.setOnClickListener{
 
@@ -43,9 +49,8 @@ class LoginFragment : AppCompatActivity() {
                 val checkuser = dbHelper.checkuserpass(usernamedtx, passdtx)
                 if (checkuser==true){
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-
-                    val intent = Intent(applicationContext, HomeFragment::class.java)
-                    startActivity(intent)
+                    val intent3 = Intent(this, HomeFragment::class.java)
+                    startActivity(intent3)
                 }
                 else{
                     Toast.makeText(this, "Wrong Username", Toast.LENGTH_SHORT).show()

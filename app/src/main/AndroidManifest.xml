@@ -28,6 +28,10 @@
         <activity
             android:name=".RegistrationFragment">
         </activity>
+
+        <activity
+            android:name=".HomeFragment">
+        </activity>
     </application>
 
 </manifest>
