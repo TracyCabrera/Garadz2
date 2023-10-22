@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentHomeBinding
 
@@ -53,6 +54,15 @@ class HomeFragment : Fragment() {
             }
             true
 
+        }
+        val imageView2 = view.findViewById<ImageView>(R.id.imageView2)
+        imageView2.setOnClickListener{
+            replaceFragment(bookingFragment)
+        }
+
+        val imageView3 = view.findViewById<ImageView>(R.id.imageView3)
+        imageView3.setOnClickListener{
+            replaceFragment(bookingFragment)
         }
     }
 

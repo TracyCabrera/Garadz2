@@ -10,7 +10,7 @@
     tools:context=".HomeFragment">
 
 
-    <androidx.appcompat.widget.SearchView
+    <SearchView
         android:id="@+id/search_view"
         android:layout_width="400dp"
         android:layout_height="55dp"
@@ -19,7 +19,7 @@
         app:closeIcon="@drawable/clear_icon"
         app:iconifiedByDefault="false"
         app:queryHint="Search Location..."
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,MissingPrefix"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="189dp" />
 
@@ -137,7 +137,8 @@
         android:textColor="#676767"
         android:layout_marginTop="23dp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="572dp" />
+        tools:layout_editor_absoluteY="572dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:layout_width="40dp"
