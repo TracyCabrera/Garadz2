@@ -4,10 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.example.myapplication.R.id.loginButton
+import com.example.myapplication.R.id.textView2
+
 
 class LoginFragment : AppCompatActivity() {
 
@@ -15,6 +19,7 @@ class LoginFragment : AppCompatActivity() {
     private lateinit var username: EditText
     private lateinit var password: EditText
     private lateinit var dbHelper: DBHelper
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +29,13 @@ class LoginFragment : AppCompatActivity() {
         username = findViewById(R.id.username)
         password = findViewById(R.id.password)
         dbHelper = DBHelper(this)
+
+        val textView2 = findViewById<TextView>(R.id.textView2)
+        textView2.setOnClickListener {
+
+            val intent1 = Intent(this, RegistrationFragment::class.java)
+            startActivity(intent1)
+        }
 
         loginButton.setOnClickListener{
 

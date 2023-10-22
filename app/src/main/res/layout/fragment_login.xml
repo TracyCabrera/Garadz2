@@ -91,6 +91,7 @@
             app:cornerRadius="20dp"/>
 
         <TextView
+            android:id="@id/textView2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
@@ -98,6 +99,8 @@
             android:textSize="18dp"
             android:textAlignment="center"
             android:text="Don't have an account?"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
             android:backgroundTint="#EDECEC"
             android:textColor="#7E040404"/>
 

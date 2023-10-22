@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import android.app.Application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,33 +9,23 @@ import android.widget.EditText
 import android.widget.Toast
 
 class RegistrationFragment : AppCompatActivity() {
-
-    private lateinit var email: EditText
-    private lateinit var newPassword: EditText
-    private lateinit var confirmPassword: EditText
-    private lateinit var registerButton: Button
-    private lateinit var dbHelper: DBHelper
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_registration)
 
-        email = findViewById(R.id.registerButton)
-        newPassword = findViewById(R.id.newPassword)
-        confirmPassword = findViewById(R.id.confirmPassword)
-        registerButton = findViewById(R.id.registerButton)
-        var db = dbHelper
+        val username = findViewById(R.id.usernametextview) as EditText
+        val newPassword = findViewById(R.id.newPassword) as EditText
+        val confirmPassword = findViewById(R.id.confirmPassword) as EditText
+        val registerButton = findViewById(R.id.registerButton)  as Button
+        val dbHelper = DBHelper(this)
 
         registerButton.setOnClickListener {
-            val email = email.text.toString()
+            val username = username.text.toString()
             val newPassword = newPassword.text.toString()
             val confirmPassword = confirmPassword.text.toString()
-            val savedata = db.insertdata(email, newPassword)
+            val savedata = dbHelper.insertdata(username, newPassword)
 
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(
-                    confirmPassword
-                )
-            ) {
+            if (TextUtils.isEmpty(username) || TextUtils.isEmpty(newPassword) || TextUtils.isEmpty(confirmPassword)) {
                 Toast.makeText(
                     this,
                     "Add Username, Password & Confirm password",
